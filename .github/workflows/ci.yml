@@ -32,6 +32,7 @@ jobs:
           docker login ghcr.io --username ${USERNAME} --password ${DOCKER_TOKEN}
           cd alpine; make release; cd ..
           cd debian; make release; cd ..
+          cd distroless; make release; cd ..
           cd opensuse-leap; make release; cd ..
           cd ubuntu; make release; cd ..
 
@@ -44,5 +45,6 @@ jobs:
           docker login --username ${USERNAME} --password ${DOCKER_TOKEN}
           cd alpine; make release; cd ..
           cd debian; make release; cd ..
+          cd distroless; make release; cd ..
           cd opensuse-leap; make release; cd ..
           cd ubuntu; make release; cd ..
