@@ -1,6 +1,6 @@
 SHELL=/bin/bash -o pipefail
 
-REGISTRY   ?= appscode
+REGISTRY   ?= ghcr.io/appscode
 BIN        := curl
 IMAGE      := $(REGISTRY)/$(BIN)
 VERSION    ?= opensuse-leap
